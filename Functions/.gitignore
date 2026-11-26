@@ -1,11 +1,15 @@
-template
-build
-.secrets
-
+# OpenFaaS build artefacts
 build/
 __pycache__/
 *.pyc
+
+# faas-cli build secrets (must never be committed)
+*.secrets
+
+# environment and credentials
 .env
 pw.txt
 pw2.txt
+
+# data files
 *.csv
