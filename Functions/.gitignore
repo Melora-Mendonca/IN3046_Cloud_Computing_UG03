@@ -1,0 +1,11 @@
+template
+build
+.secrets
+
+build/
+__pycache__/
+*.pyc
+.env
+pw.txt
+pw2.txt
+*.csv

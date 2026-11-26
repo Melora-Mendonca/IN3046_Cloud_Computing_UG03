@@ -1,0 +1,29 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  low-cpu-use:
+    lang: python3-http
+    handler: ./low-cpu-use
+    image: mmendonca30/low-cpu-use:latest
+    imagePullPolicy: IfNotPresent
+
+  medium-cpu:
+    lang: python3-http
+    handler: ./medium-cpu
+    image: mmendonca30/medium-cpu:latest
+    imagePullPolicy: IfNotPresent
+
+  heavy-cpu:
+    lang: python3-http
+    handler: ./heavy-cpu
+    image: mmendonca30/heavy-cpu:latest
+    imagePullPolicy: IfNotPresent
+    
+  variable-work:
+    lang: python3-http
+    handler: ./variable-work
+    image: mmendonca30/variable-work:latest
+    imagePullPolicy: IfNotPresent
+
